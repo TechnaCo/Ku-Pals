@@ -1,0 +1,157 @@
+@font-face {
+	font-family: "ffr";
+	src: url(./Assets/Fonts/GABRWFFR.ttf);
+}
+
+body {
+	font-family: "ffr" !important;
+}
+@keyframes animate {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+}
+
+
+nav {
+	background-color: transparent;
+}
+
+.nav-item a {
+	padding: 5px 0;
+	letter-spacing: 2px;
+}
+.nav-item a:hover {
+	color: #9ce6ea;
+	text-shadow: 0 0 2px #01c6d1, 0 0 15px #01c6d1;
+}
+.navbar-brand {
+	font-size: 2rem;
+	letter-spacing: 4px;
+}
+.nav-link.active {
+	background: linear-gradient(270deg, #5b8cef85 0%, #2d4874b0 ) !important;
+}
+
+@media (width: 991px) {
+	.offcanvas-body {
+		background: linear-gradient(90deg, #0a061c, #0a061c, #010f1c, #061e36, #0d3752);
+	}
+}
+
+#kaibigan {
+    margin-top: -60px;
+}
+
+.kupal-bullet{
+	font-size: 0;
+	border: solid 5px;
+	border-radius: 100%;
+	margin: 4px;
+	opacity: 70%;
+}
+.kupal-bullet-small{
+	font-size: 0;
+	border: solid 3px;
+	border-radius: 100%;
+	margin: 4px;
+	opacity: 70%;
+}
+
+#back-video {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -2;
+	opacity: 40%;
+	filter: blur(8px);
+}
+
+.card {
+	background: transparent !important;
+	border: none !important;
+}
+#top-rated h2{
+	letter-spacing: 10px;
+}
+#top-rated h4{
+	letter-spacing: 5px;
+}
+
+#kakupalan{
+	--kind-color: rgb(25, 189, 25);
+	--understanding-color: rgb(124, 212, 241);
+	--patient-color: rgb(33, 33, 207);
+	--amazing-color: orange;
+	--loving-color: red;
+	--saintly-color: yellow;
+}
+#kupal-title{
+	background: linear-gradient(to right, var(--kind-color), var(--understanding-color), var(--patient-color), var(--amazing-color), var(--loving-color), var(--saintly-color));
+	background-size: 1000%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animate 10s linear infinite;
+}
+#kind{
+	color: var(--kind-color);
+	text-shadow: 0 0 2px var(--kind-color), 0 0 15px var(--kind-color);
+}
+#understanding{
+	color: var(--understanding-color);
+	text-shadow: 0 0 2px var(--understanding-color), 0 0 15px var(--understanding-color);
+}
+#patient{
+	color: var(--patient-color);
+	text-shadow: 0 0 2px var(--patient-color), 0 0 15px var(--patient-color);
+}
+#amazing{
+	color: var(--amazing-color);
+	text-shadow: 0 0 2px var(--amazing-color), 0 0 15px var(--amazing-color);
+}
+#loving{
+	color: var(--loving-color);
+	text-shadow: 0 0 2px var(--loving-color), 0 0 15px var(--loving-color);
+}
+#saintly{
+	color: var(--saintly-color);
+	text-shadow: 0 0 2px var(--saintly-color), 0 0 15px var(--saintly-color);
+}
+
+#kakupalan .card img{
+	filter: brightness(100%);
+}
+
+#kakupalan .card:hover{
+	filter: brightness(40%);
+	transition: filter 0.4s ease;
+}
+
+#kakupalan .card:nth-child(odd){
+	flex-direction: column-reverse;
+}
+#kagaguhan > div:nth-child(odd){
+	flex-direction: row-reverse !important;
+}
+
+@media (max-width: 992px) { 
+	#kakupalan .card{
+		flex-direction: row !important;
+	}
+	#kakupalan .card:nth-child(odd){
+		flex-direction: row-reverse !important;
+	}
+	#kagaguhan div{
+		text-align: center !important;
+	}
+}
+
+.trademark {
+	font-family: sans-serif;
+	color: rgb(50, 112, 247);
+	text-transform: uppercase;
+}
